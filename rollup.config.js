@@ -11,20 +11,20 @@ export default {
   },
   plugins: [
     resolve(),
-    terser({
-      compress: {
-        passes: 4,
-        pure_funcs: ['getHostRef'],
-        global_defs: {
-          'STENCIL_SOURCE_TARGET': 'es2017',
-          'STENCIL_PATCH_IMPORT': true
-        }
-      },
-      mangle: {
-        properties: {
-          regex: /^\$.+\$$/,
-        }
-      }
-    })
+    // terser({
+    //   compress: {
+    //     passes: 4,
+    //     pure_funcs: ['getHostRef'],
+    //     global_defs: {
+    //       'STENCIL_SOURCE_TARGET': 'es2017',
+    //       'STENCIL_PATCH_IMPORT': true
+    //     }
+    //   },
+    //   mangle: {
+    //     properties: {
+    //       regex: /^\$.+\$$/,
+    //     }
+    //   }
+    // })
   ]
 };

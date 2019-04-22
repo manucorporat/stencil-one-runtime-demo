@@ -1,5 +1,4 @@
-import {AppRoot, TodoItem, TodoInput} from './components';
+// import {AppRoot, TodoItem, TodoInput} from './components';
+import { IonToggle } from './ionic';
 
-customElements.define('app-root', AppRoot);
-customElements.define('todo-item', TodoItem);
-customElements.define('todo-input', TodoInput);
+customElements.define('my-toggle', IonToggle);
